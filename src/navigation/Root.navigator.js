@@ -1,0 +1,20 @@
+import React from 'react';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+import { Routes } from './Routes';
+import Home from '../screens/Home/Home.screen';
+
+const Stack = createNativeStackNavigator();
+
+const RootNavigator = () => {
+  return (
+    <Stack.Navigator>
+      <Stack.Screen
+        name={Routes.Home}
+        component={Home}
+      />
+    </Stack.Navigator>
+  );
+};
+
+export default RootNavigator;

@@ -3,23 +3,26 @@ import {
   SafeAreaView,
   StatusBar,
   View,
-  Text,
 } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
 
 import { Styles } from './App.styles';
 import { Colors } from '../themes/Colors';
+import RootNavigator from '../navigation/Root.navigator';
 
 const App = () => {
   return (
-    <SafeAreaView style={Styles.safeAreaView}>
-      <StatusBar
-        backgroundColor={Colors.DARK_CERULEAN}
-        barStyle="light-content"
-      />
-      <View style={Styles.container}>
-        <Text>Hello World</Text>
-      </View>
-    </SafeAreaView>
+    <NavigationContainer>
+      <SafeAreaView style={Styles.safeAreaView}>
+        <StatusBar
+          backgroundColor={Colors.WHITE}
+          barStyle="dark-content"
+        />
+        <View style={Styles.container}>
+          <RootNavigator />
+        </View>
+      </SafeAreaView>
+    </NavigationContainer>
   );
 };
 
