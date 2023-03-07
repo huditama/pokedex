@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unstable-nested-components */
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
@@ -12,6 +13,7 @@ const RootNavigator = () => {
       <Stack.Screen
         name={Routes.Home}
         component={Home}
+        options={{ headerShown: false }}
       />
     </Stack.Navigator>
   );

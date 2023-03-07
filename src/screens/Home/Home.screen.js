@@ -1,12 +1,13 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
+import Header from '../../components/Header/Header.component';
 
 import { Styles } from './Home.styles';
 
 const Home = () => {
   return (
     <View style={Styles.container}>
-      <Text>Home Page</Text>
+      <Header />
     </View>
   );
 };
