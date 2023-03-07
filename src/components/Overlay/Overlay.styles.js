@@ -4,6 +4,7 @@ import { Colors } from '../../themes/Colors';
 
 const Styles = StyleSheet.create({
   overlay: {
+    zIndex: 999,
     position: 'absolute',
     top: 0,
     bottom: 0,
