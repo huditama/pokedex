@@ -58,7 +58,7 @@ module.exports = {
     ],
     'prefer-destructuring': 1,
     'no-else-return': 0,
-    'react/require-default-props': 0,
+    'react/require-default-props': 1,
     'react/no-string-refs': 0,
     'react/jsx-max-props-per-line': [2, { maximum: 2, when: 'multiline' }],
     'no-unused-vars': ['error', { args: 'none' }],
